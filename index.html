@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Number</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <style>
+        body{
+            text-align: :center;
+        }
+        h1{
+            color:green;
+        }
+        .output
+        {
+            color: blue;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Random Number Generation</h1>
+
+    <p>Click the below button to Generate 8 digit random number</p>
+
+    <button onclick="foo();">Click Here</button>
+
+    <p class="output" id="output"></p>
+
+    <script>
+        function foo(){
+            var outputElement = document.getElementById('output');
+            outputElement.innerHTML = ("" + Math.random()).substring(2,10);
+        }
+    </script>
+
+</body>
+</html>
